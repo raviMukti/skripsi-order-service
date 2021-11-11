@@ -25,31 +25,31 @@ public class ProductEntity {
     @Column(name = "product_id")
     private Long productId;
 
-    @Column
+    @Column(length = 30, nullable = false)
     private String sku;
 
-    @Column
+    @Column(length = 30, nullable = false)
     private String barcode;
 
-    @Column
+    @Column(length = 255, nullable = false)
     private String productName;
 
-    @Column
-    private String decription;
+    @Column(length = 100000)
+    private String description;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String brand;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String material;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String motif;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String colour;
 
-    @Column
+    @Column(nullable = false)
     private BigDecimal price;
 
     @Column
@@ -89,8 +89,7 @@ public class ProductEntity {
     @JoinColumn(name = "category_id", nullable = false)
     private CategoryEntity category;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "product_resource_id")
+    @OneToOne(mappedBy = "product")
     private ProductResourceEntity productResource;
 
 }

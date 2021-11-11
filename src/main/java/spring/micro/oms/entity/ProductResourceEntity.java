@@ -2,11 +2,13 @@ package spring.micro.oms.entity;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -28,34 +30,34 @@ public class ProductResourceEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productResourceId;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlPrimaryPhoto;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto1;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto2;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto3;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto4;
     
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto5;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto6;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlAlternativePhoto7;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlVideo;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String urlImageGuidance;
 
     @CreationTimestamp
@@ -70,7 +72,8 @@ public class ProductResourceEntity {
     @Column
     private Long updatedBy;
 
-    @OneToOne(mappedBy = "productResource")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id", nullable = false)
     private ProductEntity product;
     
 }

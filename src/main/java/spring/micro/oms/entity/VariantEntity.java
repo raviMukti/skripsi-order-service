@@ -32,16 +32,16 @@ public class VariantEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long variantId;
 
-    @Column
+    @Column(length = 30, nullable = false)
     private String sku;
 
-    @Column
+    @Column(length = 30, nullable = false)
     private String barcode;
 
-    @Column
+    @Column(length = 255, nullable = false)
     private String variantName;
 
-    @Column
+    @Column(length = 255, nullable = true)
     private String variantOption;
 
     @Column

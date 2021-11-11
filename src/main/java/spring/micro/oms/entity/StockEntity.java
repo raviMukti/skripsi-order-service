@@ -29,13 +29,13 @@ public class StockEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long stockId;
 
-    @Column
+    @Column(nullable = false)
     private Long readyOrderQuantity;
 
-    @Column
+    @Column(nullable = false)
     private Long reservedOrderQuantity;
 
-    @Column
+    @Column(nullable = false)
     private Long damagedQuantity;
     
     @CreationTimestamp
