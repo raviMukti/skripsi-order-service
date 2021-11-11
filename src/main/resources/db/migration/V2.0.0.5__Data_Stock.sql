@@ -1,0 +1,14 @@
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (100, 22, 1, NOW(), NOW(), 0, 0, 1, null);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (68, 44, 47, NOW(), NOW(), 0, 0, 3, null);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (13, 78, 15, NOW(), NOW(), 0, 0, 6, null);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (20, 75, 65, NOW(), NOW(), 0, 0, 7, null);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (84, 33, 3, NOW(), NOW(), 0, 0, 2, 1);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (81, 55, 12, NOW(), NOW(), 0, 0, 2, 2);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (68, 61, 31, NOW(), NOW(), 0, 0, 4, 3);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (34, 57, 2,  NOW(), NOW(), 0, 0, 4, 4);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (18, 25, 4,  NOW(), NOW(), 0, 0, 5, 5);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (13, 38, 61, NOW(), NOW(), 0, 0, 8, 6);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (33, 46, 40, NOW(), NOW(), 0, 0, 8, 7);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (58, 80, 52, NOW(), NOW(), 0, 0, 9, 8);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (9, 13, 83,  NOW(), NOW(), 0, 0, 10, 9);
+insert into stock (ready_order_quantity, reserved_order_quantity, damaged_quantity, created_date, updated_date, created_by, updated_by, product_id, variant_id) values (23, 78, 5,  NOW(), NOW(), 0, 0, 10, 10);
